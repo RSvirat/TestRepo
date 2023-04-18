@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Show Registration</title>
+	</head>
+	<style>
+		table, th, td {
+		  border: 1px solid black;
+		}
+		table.center {
+		  margin-left: auto; 
+		  margin-right: auto;
+		}
+	</style>
+	<body>
+		<table>
+				<tr>
+					<th>User Id</th>
+					<th>Assessment</th>
+					<th>Date</th>
+					<th>Type</th>
+				</tr>
+			
+			
+				<tr th:each="item : ${items}">
+					<td th:text="${item.userId}">
+					<td th:text="${item.assessment}">
+					<td th:text="${item.date}">
+					<td th:text="${item.type}">
+				</tr>
+			
+		</table>
+		<a href="/register">Register Tech</a>
+		<a href="/registerBeh">Register Behaviour</a>
+	</body>
+</html>

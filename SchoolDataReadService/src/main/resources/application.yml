@@ -1,0 +1,14 @@
+server:
+  port: 8810
+
+spring:
+  application:
+    name: School-Data-Read-Service
+  data:
+    mongodb:
+      host: 127.0.0.1
+      database: schoolData
+      port: 27017
+  jpa:
+    hibernate:
+      ddl-auto: create

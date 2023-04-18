@@ -1,0 +1,6 @@
+server:
+  port: 1829
+  
+spring:
+  application:
+    name: Sudhakar-Service

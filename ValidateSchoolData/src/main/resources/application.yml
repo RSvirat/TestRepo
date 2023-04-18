@@ -1,0 +1,14 @@
+server:
+  port: 8820
+
+spring:
+  application:
+    name: Validate-School-Data
+  data:
+    mongodb:
+      host: 127.0.0.1
+      database: schoolData
+      port: 27017
+  jpa:
+    hibernate:
+      ddl-auto: create

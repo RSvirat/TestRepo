@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Regsiter</title>
+	</head>
+	<body>
+		<form name="register" action="/registerInsert" method="post">
+		
+			<input type="hidden" name="type" value="TECH">
+			<table border = 1>
+				<tr>
+					<th>
+						Tech Register
+					</th>
+				</tr>
+				<tr>
+					<td>user Id:</td>
+					<td><input type="text" name="userId" required></td>
+				</tr>
+				<tr>
+					<td>Assessment:</td>
+					<td><input type="text" name="assessment" required></td>
+				</tr>
+				<tr>
+					<td>Date:</td>
+					<td><input type="date" name="date" required></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" name="submit" value="submit" /></td>
+				</tr>
+			</table>		
+		</form>
+	</body>
+</html>
